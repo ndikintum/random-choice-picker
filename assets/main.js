@@ -58,7 +58,7 @@ function pickRandomTag () {
 }
 
 function highlightTag (tag) {
-  tag.classList.add ('highlight')
+  tag.classList.add('highlight')
 }
 
 function unHighlightTag (tag) {
