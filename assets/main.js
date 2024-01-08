@@ -15,8 +15,8 @@ textarea.addEventListener('keyup', (e) => {
   }
 })
 
-function createTags(input) {
-  const tags = input.split (',').filter(tag => tag.trim() !== '').map(tag => tag.trim())
+function createTags (input) {
+  const tags = input.split(',').filter(tag => tag.trim() !== '').map(tag => tag.trim())
 
   tagsEl.innerHTML = ''
 
@@ -57,10 +57,10 @@ function pickRandomTag () {
   return tags[Math.floor(Math.random() * tags.length)]
 }
 
-function highlightTag(tag) {
+function highlightTag (tag) {
   tag.classList.add ('highlight')
 }
 
-function unHighlightTag(tag) {
-  tag.classList.remove ('highlight')
+function unHighlightTag (tag) {
+  tag.classList.remove('highlight')
 }
